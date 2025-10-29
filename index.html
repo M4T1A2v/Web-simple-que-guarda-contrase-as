@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passwi Web</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <h1>Passwi: salve your password</h1>
+    
+    <input type="password" id="masterKey" placeholder="password: 1234">
+    <button onclick="acceder()">Acceder</button>
+
+    <div id="app" style="display:none;">
+        <input type="text" id="sitio" placeholder="password of..">
+        <input type="text" id="clave" placeholder="write your password">
+        <button onclick="guardar()">Guardar</button>
+        <br><br>
+        <input type="text" id="buscarSitio" placeholder="search password of..">
+        <button onclick="buscar()">Buscar</button>
+        <p id="resultado"></p>
+    </div>
+
+</body>
+
+<script src="app.js"></script>
+</html>
